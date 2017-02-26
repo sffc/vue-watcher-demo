@@ -1,0 +1,8 @@
+<script src="../node_modules/vue/dist/vue.js"></script>
+<div id="app">
+	<button @click="loadAnother">Load Next Image</button>
+	<br />
+	<img v-for="src in outputs" :src="src" width="150" height="100" />
+</div>
+<canvas id="canv" width="600" height="400" style="display: none"></canvas>
+<script src="app.js"></script>
